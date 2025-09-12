@@ -1,5 +1,5 @@
 # Base image
-FROM python:3.13-slim
+FROM python:3.13.2
 
 # Set working directory
 WORKDIR /C:\Users\Rahul.Vyas\OneDrive - Heuristics Informatics Pvt. Ltd\Documents\docker_practice
