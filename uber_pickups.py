@@ -3,6 +3,17 @@ import pandas as pd
 import numpy as np
 import time
 
+import os
+
+# Example: read an env var and show it in the sidebar
+MY_ENV = os.getenv("MY_ENV", "NOT SET")
+st.sidebar.header("Environment")
+st.sidebar.write("MY_ENV:", MY_ENV)
+
+# Example: show where a data volume will be mounted
+DATA_DIR = os.getenv("DATA_DIR", "/app/data")
+st.sidebar.write("Data directory inside container:", DATA_DIR)
+
 st.title('Uber pickups in NYC')
 
 DATE_COLUMN = 'date/time'
